@@ -22,8 +22,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90vw;
-    height: 90vh;
+    width: 70%;
+    height: 70%;
     background-color: #fff9f9;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
     
@@ -34,7 +34,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 65%;
-    height: 100%;
+    height: 90%;
     background-image: url(images/bg-pattern-desktop.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -46,15 +46,13 @@ body{
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    position: relative;
     width: 65%;
     height: 100%;
     filter: saturate(0.3);
 }
 
-.containerMain .container-text .text .logo{
-    width: 30%;
-    margin: 10% 0%;
+.containerMain .container-text .text .containerLogo .logo{
+    margin: 20% 0%;
 }
 
 .containerMain .container-text .text .title-light{
@@ -86,14 +84,14 @@ body{
 .containerMain .container-text .text .container-input{
     display: flex;
     position: relative;
-    width: 80%;
+    width: 70%;
 }
 
 .containerMain .container-text .text .container-input input{
     color: hsl(0, 36%, 70%);
     border: 1px solid hsl(0, 36%, 70%);
     border-radius:20px;
-    padding: 15px 50px;
+    padding: 15px 25px;
     width: 100%;
     background-color: transparent;
 }
@@ -111,6 +109,13 @@ body{
     
 }
 
+.containerMain .container-text .text .container-input .iconError{
+    position: absolute;
+    top: 25%;
+    right: 100px;
+    width: 5%;
+}
+
 .containerMain .container-text .text .container-input button{
     position: absolute;
     top: 0;
@@ -125,14 +130,20 @@ body{
 
 }
 
-.containerMain .container-img{
-    width: 37%;
-    height: 100%;
+.containerMain .container-text .text .pError{
+    color: hsl(0, 93%, 68%);
+    margin: 10px 40px;
 }
 
-.containerMain .container-img .hero{
+.containerMain .container-img{
+    width: 40%;
     height: 100%;
+    background-image: url(images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+
 
 .attribution {
     font-size: 16px; 
